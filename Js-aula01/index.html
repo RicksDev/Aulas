@@ -8,16 +8,34 @@
     <script>
         // Isso é um comentário com CTRL + ;
         document.write("LIBBS 2024")
-
+        // Setando variaveis
         var nome = "Samuel Santos";
         var endereco = "Rua da minha casa";
         var telefone = "11 946194068";
+        var studing;
         const anoNascimento = 2004; 
 
+        // Escrever na tela
         document.write(nome + "<br>");
         document.write(endereco +"<br>");
         document.write(telefone + "<br>");
         document.write(anoNascimento + "<br>");
+
+        console.log("Estou aqui...");
+
+        // Mostrar a mensagem e pegar uma informação
+        nome = prompt("qual o seu nome?")
+
+        studing = confirm("Está estudando no momento?");
+        if(studing){
+            alert("Parabéns!!")
+        }else {
+            alert("Vamos estudar...")
+        }
+
+        // Mostrar um alerta
+        alert("você chegou ao seu destino");
+
     </script>
 </head>
 <body>
