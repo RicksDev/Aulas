@@ -14,6 +14,7 @@
         var telefone = "11 946194068";
         var studing;
         const anoNascimento = 2004; 
+        var idade;
 
         // Escrever na tela
         document.write(nome + "<br>");
@@ -24,7 +25,7 @@
         console.log("Estou aqui...");
 
         // Mostrar a mensagem e pegar uma informação
-        nome = prompt("qual o seu nome?")
+        /*nome = prompt("qual o seu nome?")
 
         studing = confirm("Está estudando no momento?");
         if(studing){
@@ -35,6 +36,19 @@
 
         // Mostrar um alerta
         alert("você chegou ao seu destino");
+        */ 
+        idade = prompt("Qual sua idade");
+
+
+        if(idade <= 12){
+            alert("va brincar");
+        }else if (idade <=18) {
+            alert("Parabéns, hora de tirar a carta")
+        }else if(idade < 25){
+            alert("já não precisa morar com o papai")
+        }else {
+            alert("Nada de neto?")
+        }
 
     </script>
 </head>
