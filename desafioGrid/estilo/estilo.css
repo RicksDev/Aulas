@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 350px 400px 200px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "tittle img1 gatos"
+    "gatinhos gato3 title"
+    "gato4 gato4 gato5";
+  height: 500px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  margin-top: 110px;
+}
+
+.tittle {
+  grid-area: tittle;
+  background-color: grey;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.title {
+  grid-area: tittle;
+  background-color: grey;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+div.img1 {
+  grid-area: img1;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+div.gatos {
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "."
+    ".";
+  grid-area: gatos;
+  width: 100%;
+}
+
+.gatinhos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ". .";
+  grid-area: gatinhos;
+}
+
+.gato3 {
+  grid-area: gato3;
+}
+
+.title {
+  grid-area: title;
+}
+
+.gato4 {
+  grid-area: gato4;
+}
+
+.gato5 {
+  grid-area: gato5;
+}

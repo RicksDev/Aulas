@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  background-color: #333;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  float: left;
+}
+
+li a,
+.dropbtn {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rebeccapurple;
+  transition: all 0.5s ease;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+.dropdown_content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 2);
+}
+.dropdown_content a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 12px 16px;
+  text-align: left;
+}
+.dropdown_content a:hover {
+  background-color: #f1f1f1;
+  transition: all 0.5s ease;
+}
+.dropdown:hover .dropdown_content {
+  display: block;
+  transition: all 0.5s ease;
+}
+
+/* To trabalhando daq pra baixo */
+
+#container_id {
+  display: flex;
+  /* Display flex pra ficar um do lado do outro */
+  align-items: center;
+  justify-content: center;
+  /* Trazer tudo pro centro */
+  width: 100%;
+}
+
+.container_items {
+  width: 100%;
+
+}
+
+div.gallery {
+  margin: 5px;
+  border: 5px solid rgb(94, 92, 92);
+  float: left;
+  width: 240px;
+  height: 240px;
+}
+
+div.gallery:hover {
+  border: 5px solid rgb(212, 4, 4);
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.dropdown_content a:hover {
+  background-color: black;
+  color: blueviolet;
+  transition: all 0.5s ease;
+  border-radius: 3px;
+}
+
+@media (max-width: 700px) {
+    
+}
+
+@media (max-width: 501px) {
+  div.gallery {
+    width: 80%;
+    border: 5px solid rgb(94, 92, 92);
+    display: block;
+    margin: 10px auto;
+    margin-left: 50px;
+  }
+  div.gallery img {
+    margin: auto;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+}

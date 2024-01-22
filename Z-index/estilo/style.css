@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 10px solid green;
+  padding: 50px;
+  height: 200px;
+  top: 250px;
+  left: 60px;
+  position: relative;
+  background-color: aqua;
+}
+
+.z-index1 {
+  background-color: greenyellow;
+  padding: 30px;
+  width: 250px;
+  margin-left: 50px;
+  margin-top: -130px;
+  text-align: center;
+  z-index: -2;
+  position: absolute;
+}
+
+.z-index2 {
+  background-color: gray;
+  width: 250px;
+  padding: 30px;
+  left: 350px;
+  text-align: center;
+  top: 140px;
+  z-index: 3;
+  position: absolute;
+}

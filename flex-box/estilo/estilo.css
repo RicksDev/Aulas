@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex; 
+    /* Faz ficar um do lado do outro */ 
+    /* container => elemento pai (flex-direction, pode ser row, row-reverser, column, column-reverse) */
+
+    flex-wrap: nowrap;
+    /* wrap quer dizer que se a página não tiver espaço, vai descer o ultimo elemento da tela */
+    justify-content: space-around;
+    /* Coloquei no notion um link que explica tudo isso, no Alura */
+    align-items: center;
+}
+
+.son1 {
+    background-color: aquamarine;
+    width: 500px;
+    height: 350px;
+}
+.son2 {
+    background-color: red;
+    width: 500px;
+    height: 75px;
+}
+.son3 {
+    background-color: yellow;
+    width: 500px;
+    height: 270px;
+}

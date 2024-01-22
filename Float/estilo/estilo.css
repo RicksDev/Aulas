@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    border: 5px solid blue;
+    display: flex;
+    text-align: center;
+    overflow: auto; 
+    /* Overflow : auto quer dizer que a Div se adequa ao tamanho da imagem */
+}
+img {
+    float: right;
+    height: 150px;
+    width: 170px;
+    align-items: center;
+    margin-top: 5px;
+}
